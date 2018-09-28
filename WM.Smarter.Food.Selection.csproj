@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A9D1D3B-2A57-4237-9DB8-9A4BA88C4A57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WM.SmarterFoodSelection</RootNamespace>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ReleaseVersion>
+    </ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <AssemblyName>WM Smarter Food Selection</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>Mods\WM Smarter Food Selection\Assemblies</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>deploy.cmd</command>
+          <externalConsole>True</externalConsole>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+    <LangVersion>Default</LangVersion>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>Mods\WM Smarter Food Selection\Assemblies</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>Default</LangVersion>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>deploy.cmd</command>
+          <externalConsole>True</externalConsole>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (no symbols)|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>Mods\WM Smarter Food Selection\Assemblies</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>Default</LangVersion>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>"D:\jeux\RimWorld\bin\RimWorld_debug\Mods\WM Smarter Food Selection\deploy.cmd"</command>
+          <externalConsole>True</externalConsole>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mods\WM Smarter Food Selection\About\About.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mods\WM Smarter Food Selection\About\preview.png" />
+    <None Include="Mods\WM Smarter Food Selection\About\PublishedFileId.txt" />
+    <None Include="Mods\WM Smarter Food Selection\About\version.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Items_Food.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\KeyBindingCategoryDefs\KeyBindingCategories.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\KeyBindingDefs\KeyBindings.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\ascetic.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\colonists.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\incapacitated.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\mealsonly.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\nofood.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\pets.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\prisoners.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Defs\UpdateFeatures.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Languages\English\Keyed\Keys.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Languages\French\Keyed\Keys.xml" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\Things\FineCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\Things\LavishCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\Things\MealNutrientPasteCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\Things\SimpleCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\UI\Cycle.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPaste.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteCorn.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteCornHuman.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteCornInsectHuman.png" />
+    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteHumanInsectCorn.png" />
+    <None Include="Mods\WM Smarter Food Selection\Patches\Buildings_Production.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="source\CompatabilityDef.cs" />
+    <Compile Include="source\Config.cs" />
+    <Compile Include="source\DefDatabaseHelper.cs" />
+    <Compile Include="source\FoodCategory.cs" />
+    <Compile Include="source\FoodCategoryUtils.cs" />
+    <Compile Include="source\FoodDefRecord.cs" />
+    <Compile Include="source\ModControler.cs" />
+    <Compile Include="source\MyDefClass.cs" />
+    <Compile Include="source\PolicyUtils.cs" />
+    <Compile Include="source\Report.cs" />
+    <Compile Include="source\resources.cs" />
+    <Compile Include="source\Utils.cs" />
+    <Compile Include="source\Cache\CacheClass.cs" />
+    <Compile Include="source\Cache\FoodSearchCache.cs" />
+    <Compile Include="source\Detours\Access.cs" />
+    <Compile Include="source\Detours\Building_NutrientPasteDispenser.cs" />
+    <Compile Include="source\Detours\Building_NutrientPasteDispenser_ExtraComp.cs" />
+    <Compile Include="source\Detours\WorkGiver_Warden_DeliverFood.cs" />
+    <Compile Include="source\Detours\CaravanInventoryUtility\TryGetBestFood.cs" />
+    <Compile Include="source\Detours\FoodUtility\DebugFoodSearchFromMouse.cs" />
+    <Compile Include="source\Detours\FoodUtility\TryFindBestFoodSourceFor.cs" />
+    <Compile Include="source\Detours\JobGiver_GetFood\JobGiver_GetFood.cs" />
+    <Compile Include="source\Detours\Toils_Ingest\TakeMealFromDispenser.cs" />
+    <Compile Include="source\Detours\WorkGiver_InteractAnimal\HasFoodToInteractAnimal.cs" />
+    <Compile Include="source\Detours\WorkGiver_InteractAnimal\TakeFoodForAnimalInteractJob.cs" />
+    <Compile Include="source\Detours\WorkGiver_InteractAnimal\WorkGiver_InteractAnimal.cs" />
+    <Compile Include="source\FoodScore\FoodScoreUtils.cs" />
+    <Compile Include="source\FoodScore\FoodSourceRating.cs" />
+    <Compile Include="source\FoodScore\FoodUtils.cs" />
+    <Compile Include="source\PawnSetting\WorldDataStore_PawnPolicies.cs" />
+    <Compile Include="source\Policy\Diet.cs" />
+    <Compile Include="source\Policy\Diets.cs" />
+    <Compile Include="source\Policy\MaskAttribute.cs" />
+    <Compile Include="source\Policy\PawnMask.cs" />
+    <Compile Include="source\Policy\Policies.cs" />
+    <Compile Include="source\Policy\Policy.cs" />
+    <Compile Include="source\UI\ITab_Pawn_Food.cs" />
+    <Compile Include="source\UI\ITab_Pawn_Needs.cs" />
+    <Compile Include="source\UI\PawnPolicyCard.cs" />
+    <Compile Include="source\UI\WITab_Caravan_Needs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mods\WM Smarter Food Selection\Assemblies\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
