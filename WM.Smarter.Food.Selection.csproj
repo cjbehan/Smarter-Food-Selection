@@ -85,36 +85,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Mods\WM Smarter Food Selection\About\About.xml">
+    <None Include="Mods\WM Smarter Food Selection Continued\About\About.xml">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Mods\WM Smarter Food Selection\About\preview.png" />
-    <None Include="Mods\WM Smarter Food Selection\About\PublishedFileId.txt" />
-    <None Include="Mods\WM Smarter Food Selection\About\version.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Items_Food.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\KeyBindingCategoryDefs\KeyBindingCategories.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\KeyBindingDefs\KeyBindings.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\ascetic.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\colonists.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\incapacitated.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\mealsonly.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\nofood.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\pets.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\Policies\prisoners.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Defs\UpdateFeatures.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Languages\English\Keyed\Keys.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Languages\French\Keyed\Keys.xml" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\Things\FineCannibal.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\Things\LavishCannibal.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\Things\MealNutrientPasteCannibal.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\Things\SimpleCannibal.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\UI\Cycle.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPaste.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteCorn.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteCornHuman.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteCornInsectHuman.png" />
-    <None Include="Mods\WM Smarter Food Selection\Textures\UI\NutrientPasteHumanInsectCorn.png" />
-    <None Include="Mods\WM Smarter Food Selection\Patches\Buildings_Production.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\About\preview.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\About\PublishedFileId.txt" />
+    <None Include="Mods\WM Smarter Food Selection Continued\About\version.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Items_Food.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\KeyBindingCategoryDefs\KeyBindingCategories.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\KeyBindingDefs\KeyBindings.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\ascetic.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\colonists.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\incapacitated.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\mealsonly.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\nofood.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\pets.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\Policies\prisoners.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Defs\UpdateFeatures.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Languages\English\Keyed\Keys.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Languages\French\Keyed\Keys.xml" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\Things\FineCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\Things\LavishCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\Things\MealNutrientPasteCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\Things\SimpleCannibal.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\UI\Cycle.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\UI\NutrientPaste.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\UI\NutrientPasteCorn.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\UI\NutrientPasteCornHuman.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\UI\NutrientPasteCornInsectHuman.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Textures\UI\NutrientPasteHumanInsectCorn.png" />
+    <None Include="Mods\WM Smarter Food Selection Continued\Patches\Buildings_Production.xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -163,7 +163,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mods\WM Smarter Food Selection\Assemblies\" />
+    <Folder Include="Mods\WM Smarter Food Selection Continued\Assemblies\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -70,5 +70,22 @@
       Enjoy !
     </content>
   </HugsLib.UpdateFeatureDef>
-	
+
+  <HugsLib.UpdateFeatureDef ParentName="WMSFS_UpdateFeatureBase">
+    <defName>WMSFS_2_3_0_2</defName>
+    <assemblyVersion>2.3.0.2</assemblyVersion>
+    <content>
+      &lt;size=20&gt;Survival Foods Rework&lt;/size&gt;|
+      Changed how Pemmican and Packaged Survival Meals were categorized:&lt;/br&gt;
+      -They now have their own category "MealSurvival"&lt;/br&gt;
+      -They should now be consumed after more perishable meal options (including nutrient paste)&lt;/br&gt;
+      -Colonists will still pick them up into their inventory in-line with vanilla behavior, but they will choose other options come meal time if available&lt;/br&gt;
+      -Pets should now mostly ignore them opting for raw foods first&lt;/br&gt;
+      **May change visitor behavior** If visitors display any unwanted/unusual behavior please let me know|
+      Bug Fix:|
+      -Rescued Space Refugees with out a faction where not properly assigned a policy and were considered wild animals. Leaving them to fend for themselves.&lt;/br&gt;
+      They should now function as expected.
+    </content>
+  </HugsLib.UpdateFeatureDef>
+
 </Defs>
