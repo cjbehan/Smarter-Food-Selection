@@ -71,11 +71,17 @@ namespace WM.SmarterFoodSelection
 					return Policies.Wild;
 			}
 
-            // Should only occur if eater is unfactioned space refugee | prevents error with eater.Faction.IsPlayer in next if statement
+            // Should only occur if eater is unfactioned space refugee or WildMan | prevents error with eater.Faction.IsPlayer in next if statement
             if (eater.Faction == null)
-                return null;
-
-			if (!eater.Faction.IsPlayer && eater.Faction.RelationWith(Faction.OfPlayer).kind != FactionRelationKind.Hostile && !eater.IsPrisonerOfColony)
+            {
+                if (eater.KindLabel == "space refugee" ||
+                    ((eater.KindLabel == "wild man" || eater.KindLabel == "wild woman") &&
+                        eater.mindState.lastJobTag == Verse.AI.JobTag.TuckedIntoBed))
+                    return Policies.Friendly;
+                else
+                    return null;
+            }
+            if (!eater.Faction.IsPlayer && eater.Faction.RelationWith(Faction.OfPlayer).kind != FactionRelationKind.Hostile && !eater.IsPrisonerOfColony)
 			{
 				if (eater.RaceProps.Animal)
 					return Policies.FriendlyPets;

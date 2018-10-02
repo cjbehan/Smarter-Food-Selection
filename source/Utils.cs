@@ -143,8 +143,9 @@ namespace WM.SmarterFoodSelection
 				position = food.Position;
 			}
 
-			return pawn.CanReach(position, Verse.AI.PathEndMode.OnCell, Danger.Deadly, false, TraverseMode.ByPawn);
-		}
+            //return pawn.CanReach(position, Verse.AI.PathEndMode.OnCell, Danger.Deadly, false, TraverseMode.ByPawn);
+            return pawn.CanReach(position, Verse.AI.PathEndMode.Touch, Danger.Deadly, false, TraverseMode.ByPawn);
+        }
 
 		public static bool IsAnyoneCapturing(Map map, Pawn pawn)
 		{
@@ -169,7 +170,11 @@ namespace WM.SmarterFoodSelection
 #if DEBUG
             //Log.Message("Wild animal check on" + pawn.KindLabel);
 #endif
-            if (pawn.Faction == null && pawn.KindLabel == "space refugee")
+            if (pawn.IsPrisonerOfColony || 
+                (pawn.Faction == null && 
+                    (pawn.KindLabel == "space refugee" || 
+                    ((pawn.KindLabel == "wild man" || pawn.KindLabel == "wild woman") && 
+                        pawn.mindState.lastJobTag == Verse.AI.JobTag.TuckedIntoBed))))
                 return false;
             else
                 return pawn.Faction == null;
